@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding" defaultCharsetForPropertiesFiles="GBK">
+    <file url="file://$PROJECT_DIR$/src/main/java/RobotClient/content/2002_jilu.txt" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/RobotServer/DB" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/RobotServer/DB/Sql.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/RobotServer/ground" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/RobotServer/ground/MyException.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/RobotServer/ground/ReadFile.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/RobotServer/net" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/RobotServer/net/ChatServer.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/RobotServer/thread" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/RobotServer/thread/Chat.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/RobotServer/thread/ChatThread.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/RobotServer/thread/CheckData.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/resources" charset="UTF-8" />
+    <file url="PROJECT" charset="UTF-8" />
+  </component>
+</project>
