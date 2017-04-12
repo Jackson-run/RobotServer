@@ -3,6 +3,11 @@ import java.io.DataInputStream;
 import java.io.BufferedInputStream;
 import java.io.IOException;
 import java.net.Socket;
+/**
+ * Created by wr on 2017/4/10.
+ * versions 1.0
+ */
+
 public class ChatThread implements Runnable
 {
 	private Socket socket=null;

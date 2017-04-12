@@ -6,13 +6,14 @@ import java.io.IOException;
 import java.io.File;
 import java.util.Date;
 import java.util.Hashtable;
-import java.util.Enumeration;
 import java.text.SimpleDateFormat;
 import RobotClient.robot.ground.Info;
-import RobotClient.mainpanelistener.lb_robots;
-import RobotClient.robot.net.ClientServer;
-import RobotClient.robot.listener.MyActionListener;
-import RobotClient.robot.listener.MyException;
+import RobotClient.listener.lb_robots;
+
+/**
+ * Created by wr on 2017/4/10.
+ * versions 1.0
+ */
 public class ReadFile extends Thread
 {
 	private File file=null;

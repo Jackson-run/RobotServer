@@ -2,7 +2,12 @@ package RobotClient.robot.ground;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.awt.Color;
-import RobotClient.mainpanelistener.lb_robots;
+import RobotClient.listener.lb_robots;
+
+/**
+ * Created by wr on 2017/4/10.
+ * versions 1.0
+ */
 
 public class ShowMessage
 {

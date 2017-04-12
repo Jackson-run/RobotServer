@@ -1,7 +1,7 @@
 package RobotClient.robot.thread;
 import java.awt.Color;
 import RobotClient.robot.ground.Info;
-import RobotClient.mainpanelistener.lb_robots;
+import RobotClient.listener.lb_robots;
 //import com.wr.RobotClient.robot.RobotServer.net.ClientServer;*/
 import java.util.Date;
 import java.text.SimpleDateFormat;
@@ -9,7 +9,10 @@ import RobotClient.robot.listener.BiaoListener;
 import RobotClient.robot.listener.MyActionListener;
 import java.util.regex.Pattern;
 import java.util.regex.Matcher;
-
+/**
+ * Created by wr on 2017/4/10.
+ * versions 1.0
+ */
 public class DealString implements Runnable
 {
 	private lb_robots main;

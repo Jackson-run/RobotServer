@@ -1,0 +1,6 @@
+# Created by .ignore support plugin (hsz.mobi)
+.idea/vcs.xml
+.idea/workspace.xml
+src/main/java/RobotClient/content/
+src/main/resources/
+target/

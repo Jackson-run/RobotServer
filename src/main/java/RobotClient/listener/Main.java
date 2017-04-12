@@ -1,6 +1,12 @@
-package RobotClient.mainpanelistener;
+package RobotClient.listener;
 import javax.swing.*;
 import java.awt.event.*;
+
+/**
+ * Created by wr on 2017/4/10.
+ * versions 1.0
+ */
+
 public class Main extends JFrame
 {
 	lb_robots r;

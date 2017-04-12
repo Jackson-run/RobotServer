@@ -1,4 +1,4 @@
-package RobotClient.mainpanelistener;
+package RobotClient.listener;
 import javax.swing.JPanel;
 import javax.swing.ImageIcon;
 import javax.swing.JSplitPane;
@@ -17,11 +17,16 @@ import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 
 import javax.swing.text.*;
-import RobotClient.robot.listener.BiaoListener;
-import RobotClient.robot.listener.MyActionListener;
+
+import RobotClient.robot.listener.*;
 import RobotClient.robot.ground.Info;
 import RobotClient.robot.net.LinkServer;
-import com.sun.xml.internal.ws.api.model.JavaMethod;
+
+
+/**
+ * Created by wr on 2017/4/10.
+ * versions 1.0
+ */
 
 public class lb_robots extends JPanel{
 	private static final long serialVersionUID = 1L;
@@ -95,17 +100,22 @@ public class lb_robots extends JPanel{
 	public void initB()//设置右边部分
 	{
 		help_btn = new JButton("help≡[。。]≡");
+		help_btn.addMouseListener(new HelpListener());
 		introdu_pane = new JPanel();
 		hsu_pane = new JPanel();
 		hsu_pane.setLayout(new BorderLayout());
 		introdu_pane.setLayout(new BorderLayout());
 		qq_introd_btn = new JButton("球球简介☺");
+		qq_introd_btn.addMouseListener(new Qiuqiu_IntroListener());
 		hsu_introd_btn = new JButton("黄山学院简介");
+		hsu_introd_btn.addMouseListener(new Hsu_IntroListener());
 		aboutus_btn = new JButton("关于我们");
+		aboutus_btn.addMouseListener(new AboutUsListener());
 		infor_depart_btn = new JButton("我们大信工");
+		infor_depart_btn.addMouseListener(new InformDepart_IntroListener());
 		area=new JTextArea(5,10);
 		area.append("\n姓名：球球\n\n" +
-				"专业：软件工程\n\n主人：帅气的润润\n\n爱好：有事问球球，宝宝啥都懂\n\n@version 1.0\n\n@author Jackson_Run\n");
+				"性别：女\n\n主人：帅气的润润\n\n爱好：有事问球球，宝宝啥都懂\n\n@version 1.0\n\n@author Jackson_Run\n");
 		area.setFont(new Font("宋体",Font.PLAIN,18));
 		area.setEditable(false);
 		area.setLineWrap(true);

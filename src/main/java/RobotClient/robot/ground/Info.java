@@ -3,6 +3,10 @@ import java.util.Vector;
 import java.util.Timer;
 import java.net.Socket;
 //import client.LoginAction;
+/**
+ * Created by wr on 2017/4/10.
+ * versions 1.0
+ */
 public class Info
 {
 	public static Socket socket;

@@ -1,15 +1,17 @@
 package RobotClient.robot.thread;
-import java.awt.Color;
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
 import java.io.File;
 import java.util.Hashtable;
 import RobotClient.robot.ground.Info;
-import RobotClient.mainpanelistener.lb_robots;
-import RobotClient.robot.net.ClientServer;
+import RobotClient.listener.lb_robots;
 import RobotClient.robot.ground.WriteFile;
 import RobotClient.robot.listener.MyActionListener;
+/**
+ * Created by wr on 2017/4/10.
+ * versions 1.0
+ */
 public class ReadRecord extends Thread
 {
 	private File file=null;

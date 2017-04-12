@@ -1,31 +1,31 @@
 package RobotClient.robot.listener;
 import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
-import java.awt.event.TextListener;
-import java.awt.event.TextEvent;
 import java.awt.event.KeyListener;
 import java.awt.event.KeyEvent;
 import javax.swing.event.CaretEvent;
 import javax.swing.event.CaretListener;
 import java.awt.Color;
-import java.awt.Component;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import javax.swing.JTextPane;
 import java.util.Vector;
 import javax.swing.ImageIcon;
-import javax.swing.JLabel;
 import java.io.DataOutputStream;
 import java.io.IOException;
 import java.io.BufferedOutputStream;
 
-import java.awt.Component;
 import java.util.regex.Pattern;
 import java.util.regex.Matcher;
 import RobotClient.robot.ground.Info;
-import RobotClient.robot.net.LinkServer;
 import RobotClient.robot.thread.JudgeThread;
-import RobotClient.mainpanelistener.lb_robots;
+import RobotClient.listener.lb_robots;
+
+/**
+ * Created by wr on 2017/4/10.
+ * versions 1.0
+ */
+
 
 public class MyActionListener implements ActionListener,KeyListener,CaretListener
 {

@@ -8,6 +8,11 @@ import java.io.IOException;
 import java.util.Vector;
 import java.util.Hashtable;
 
+/**
+ * Created by wr on 2017/4/10.
+ * versions 1.0
+ */
+
 public class WriteFile
 {
 	private File file=null;

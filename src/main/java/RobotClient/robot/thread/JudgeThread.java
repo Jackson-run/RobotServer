@@ -6,9 +6,13 @@ import java.util.Date;
 import RobotClient.robot.ground.WriteFile;
 import RobotClient.robot.listener.MyActionListener;
 import RobotClient.robot.listener.MyException;
-import RobotClient.mainpanelistener.lb_robots;
+import RobotClient.listener.lb_robots;
 import RobotClient.robot.ground.Info;
 import java.awt.Color;
+/**
+ * Created by wr on 2017/4/10.
+ * versions 1.0
+ */
 public class JudgeThread
 {
 	private String str=null;

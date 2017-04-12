@@ -6,6 +6,12 @@ import java.io.BufferedOutputStream;
 import java.io.FileOutputStream;
 import java.net.ServerSocket;
 import java.net.Socket;
+
+/**
+ * Created by wr on 2017/4/10.
+ * versions 1.0
+ */
+
 public class ReceiveImage
 {
 	private ServerSocket ss=null;

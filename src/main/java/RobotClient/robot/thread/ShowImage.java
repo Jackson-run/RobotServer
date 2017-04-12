@@ -3,10 +3,13 @@ import javax.swing.JLabel;
 import javax.swing.ImageIcon;
 import javax.swing.JPanel;
 import javax.swing.JTextArea;
-import java.awt.BorderLayout;
 import java.awt.Font;
 import javax.swing.JSplitPane;
-import RobotClient.mainpanelistener.lb_robots;
+import RobotClient.listener.lb_robots;
+/**
+ * Created by wr on 2017/4/10.
+ * versions 1.0
+ */
 public class ShowImage
 {
 	private String path=null;

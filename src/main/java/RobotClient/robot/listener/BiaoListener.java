@@ -1,5 +1,4 @@
 package RobotClient.robot.listener;
-import java.awt.event.MouseListener;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 import javax.swing.JButton;
@@ -7,10 +6,13 @@ import javax.swing.ImageIcon;
 import javax.swing.JPopupMenu;
 import javax.swing.JLabel;
 import java.awt.GridLayout;
-import javax.swing.SwingConstants;
-import java.awt.Color;
 import java.util.Vector;
-import RobotClient.mainpanelistener.lb_robots;
+import RobotClient.listener.lb_robots;
+
+/**
+ * Created by wr on 2017/4/10.
+ * versions 1.0
+ */
 
 public class BiaoListener extends MouseAdapter
 {

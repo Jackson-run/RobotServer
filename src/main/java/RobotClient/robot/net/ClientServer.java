@@ -1,16 +1,17 @@
 package RobotClient.robot.net;
-import java.net.Socket;
-import java.io.DataInputStream;
-import java.io.DataOutputStream;
-import java.io.IOException;
-import java.net.Socket;
 import java.text.SimpleDateFormat;
 import java.util.Date;
-import RobotClient.mainpanelistener.lb_robots;
+import RobotClient.listener.lb_robots;
 import RobotClient.robot.ground.Info;
 import RobotClient.robot.ground.WriteFile;
 import java.awt.Color;
 import RobotClient.robot.thread.ShowImage;
+
+/**
+ * Created by wr on 2017/4/10.
+ * versions 1.0
+ */
+
 public class ClientServer implements Runnable
 {
 	/*
