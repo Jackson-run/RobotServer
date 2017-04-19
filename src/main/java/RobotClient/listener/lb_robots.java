@@ -35,7 +35,7 @@ public class lb_robots extends JPanel{
 	public JScrollPane jsp;
 	private JScrollPane scroll;
 	private JLabel label,label2;
-	private JButton qq_introd_btn;//球球简介button
+	private JButton qq_introd_btn;//Sunny简介button
 	private JButton hsu_introd_btn;//黄山学院简介button
 	private JButton aboutus_btn;//关于我们Button
 	private JButton help_btn;//获取帮助
@@ -105,7 +105,7 @@ public class lb_robots extends JPanel{
 		hsu_pane = new JPanel();
 		hsu_pane.setLayout(new BorderLayout());
 		introdu_pane.setLayout(new BorderLayout());
-		qq_introd_btn = new JButton("球球简介☺");
+		qq_introd_btn = new JButton("Sunny简介☺");
 		qq_introd_btn.addMouseListener(new Qiuqiu_IntroListener());
 		hsu_introd_btn = new JButton("黄山学院简介");
 		hsu_introd_btn.addMouseListener(new Hsu_IntroListener());
@@ -114,8 +114,8 @@ public class lb_robots extends JPanel{
 		infor_depart_btn = new JButton("我们大信工");
 		infor_depart_btn.addMouseListener(new InformDepart_IntroListener());
 		area=new JTextArea(5,10);
-		area.append("\n姓名：球球\n\n" +
-				"性别：女\n\n主人：帅气的润润\n\n爱好：有事问球球，宝宝啥都懂\n\n@version 1.0\n\n@author Jackson_Run\n");
+		area.append("\n姓名：Sunny\n\n" +
+				"性别：女\n\n主人：帅气的润润\n\n爱好：有事问Sunny，宝宝啥都懂\n\n@version 1.0\n\n@author Jackson_Run\n");
 		area.setFont(new Font("宋体",Font.PLAIN,18));
 		area.setEditable(false);
 		area.setLineWrap(true);
@@ -148,8 +148,8 @@ public class lb_robots extends JPanel{
 		pane.setEditable(false);
 
 		SimpleDateFormat sf=new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
-		insertDocument("球球:"+sf.format(new Date())+"\n",Color.BLUE);
-		insertDocument("  hi,我是机器人球球,很高兴认识你",Color.black);
+		insertDocument("Sunny:"+sf.format(new Date())+"\n",Color.BLUE);
+		insertDocument("  hi,我是机器人Sunny,很高兴认识你",Color.black);
 	}
 	public void setSplitPane()
 	{

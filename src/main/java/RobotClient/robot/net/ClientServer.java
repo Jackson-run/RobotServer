@@ -66,11 +66,11 @@ public class ClientServer implements Runnable
 				//	}catch(Exception e){}
 				//显示答案
 				System.out.println("line:");
-				lb_robots.insertDocument("\n球球:"+sdf.format(new Date())+"\n  ",Color.blue);
+				lb_robots.insertDocument("\nSunny:"+sdf.format(new Date())+"\n  ",Color.blue);
 				lb_robots.insertDocument(line, Color.black);
 				//写入文件
 				wf.writefile("  我:"+sdf.format(new Date())+"  "+Info.Chat,"jilu");
-				String sline="  球球:"+sdf.format(new Date())+"  "+line;
+				String sline="  Sunny:"+sdf.format(new Date())+"  "+line;
 				wf.writefile(sline,"jilu");
 			}
 			else if (line.startsWith("YET*"))//模糊反问
@@ -85,7 +85,7 @@ public class ClientServer implements Runnable
 				Info.dialog=line.substring(i+1,line.length());
 				Info.quest=lines;
 				line=lines+"?";
-				lb_robots.insertDocument("\n球球:"+sdf.format(new Date())+"\n  ", Color.blue);
+				lb_robots.insertDocument("\nSunny:"+sdf.format(new Date())+"\n  ", Color.blue);
 				lb_robots.insertDocument(line, Color.black);
 			}
 			else if (line.startsWith("NO*"))//没有找到答案
@@ -94,7 +94,7 @@ public class ClientServer implements Runnable
 
 				shu=line.substring(line.length()-1,line.length());//将状态提取出来
 				line=line.substring(0,line.length()-1);
-				lb_robots.insertDocument("\n球球:"+sdf.format(new Date())+"\n  ", Color.blue);
+				lb_robots.insertDocument("\nSunny:"+sdf.format(new Date())+"\n  ", Color.blue);
 				lb_robots.insertDocument(line, Color.black);
 				Info.dialog=null;
 			}
@@ -107,7 +107,7 @@ public class ClientServer implements Runnable
 				String path=stringA[0];
 				String introduce=stringA[1];
 				new ShowImage(path,introduce);
-				lb_robots.insertDocument("\n球球:"+sdf.format(new Date())+"\n  ", Color.blue);
+				lb_robots.insertDocument("\nSunny:"+sdf.format(new Date())+"\n  ", Color.blue);
 				lb_robots.insertDocument(introduce, Color.black);
 			}
 			if (Info.TCount<4)

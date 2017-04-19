@@ -20,12 +20,12 @@ public class Qiuqiu_IntroListener extends MouseAdapter{
     @Override
     public void mouseClicked(MouseEvent e) {
         super.mouseClicked(e);
-        String qq_intro_str = "  Hi,我是无所不能的球球，来自美丽的安徽黄山，闲着无聊找我聊天哦！" +
-                "我的爸爸是黄山学院的信工软件小组，球球致力于解决黄山旅游与黄山学院的师生，球球可以回答你的" +
+        String qq_intro_str = "  Hi,我是无所不能的Sunny，来自美丽的安徽黄山，闲着无聊找我聊天哦！" +
+                "我的爸爸是黄山学院的信工软件小组，Sunny致力于解决黄山旅游与黄山学院的师生，Sunny可以回答你的" +
                 "关于黄山旅游及相关问题，黄山学院的师生也可以问我哦，我对你们学校可熟悉了，" +
-                "球球的数据库还不完善，球球以后可是要解决全国的驴友的好朋友哦！(*^__^*) 嘻嘻……";
+                "Sunny的数据库还不完善，Sunny以后可是要解决全国的驴友的好朋友哦！(*^__^*) 嘻嘻……";
         SimpleDateFormat sf=new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
-        lb_robots.insertDocument("\n球球:"+sf.format(new Date())+"\n", Color.GREEN);
+        lb_robots.insertDocument("\nSunny:"+sf.format(new Date())+"\n", Color.GREEN);
         lb_robots.insertDocument(qq_intro_str,Color.gray);
     }
 

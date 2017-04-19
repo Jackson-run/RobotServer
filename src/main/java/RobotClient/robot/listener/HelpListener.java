@@ -20,11 +20,11 @@ public class HelpListener extends MouseAdapter{
     @Override
     public void mouseClicked(MouseEvent e) {
         super.mouseClicked(e);
-        String helpstr = "  Hi,我是无所不能的球球，你可以问我黄山旅游，黄山学院，或者闲着无聊找我聊天哦！\n球球还很笨/(ㄒoㄒ)/~~，不要为难球球哦(；′⌒`)!\n" +
+        String helpstr = "  Hi,我是无所不能的Sunny，你可以问我黄山旅游，黄山学院，或者闲着无聊找我聊天哦！\nSunny还很笨/(ㄒoㄒ)/~~，不要为难Sunny哦(；′⌒`)!\n" +
                 "  我可以告诉你黄山实时的门票价格哦，还有黄山旅游攻略哦，如果想问宝宝问题可以直接说“黄山”，“黄山门票”等等。。。人家喜欢耿直的蓝孩子(*^__^*) 嘻嘻……\n " +
                 " 如果宝宝不知道记得原谅宝宝哦，都怪那个润润把我弄得那么笨！！记住我哦！卖个萌(*^__^*) 嘻嘻……";
         SimpleDateFormat sf=new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
-        lb_robots.insertDocument("\n球球:"+sf.format(new Date())+"\n",Color.GREEN);
+        lb_robots.insertDocument("\nSunny:"+sf.format(new Date())+"\n",Color.GREEN);
         lb_robots.insertDocument(helpstr,Color.gray);
     }
 

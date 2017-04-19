@@ -133,7 +133,7 @@ public class DealString implements Runnable
 			System.out.println("len"+len);
 			if (len>=20)
 			{
-				main.insertDocument("\n球球:"+sdf.format(new Date())+"\n  ", Color.blue);
+				main.insertDocument("\nSunny:"+sdf.format(new Date())+"\n  ", Color.blue);
 				main.insertDocument("说的太复杂了，都被你弄晕了，还是简单点吧！！！", Color.black);
 				info="";
 			}

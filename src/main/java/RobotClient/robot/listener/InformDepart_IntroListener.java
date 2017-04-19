@@ -26,7 +26,7 @@ public class InformDepart_IntroListener extends MouseAdapter{
                 "其中省学科带头人1人，省级学术与技术带头人后备1人，省级优秀团队1个。学院还长期聘请在相关领域的知名教授参与人才培养。目前我院已承担国家自然科学基金3项、国家开放实验室基金1项，" +
                 "省级精品课程1门，位居全校前列。";
         SimpleDateFormat sf=new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
-        lb_robots.insertDocument("\n球球:"+sf.format(new Date())+"\n", Color.GREEN);
+        lb_robots.insertDocument("\nSunny:"+sf.format(new Date())+"\n", Color.GREEN);
         lb_robots.insertDocument(inform_intro_str,Color.gray);
     }
 

@@ -61,7 +61,7 @@ public class JudgeThread
 				f(flag);
 				String str1=str.substring(1,str.length());
 
-				lb_robots.insertDocument("\n球球:"+sdf.format(new Date())+"\n  ", Color.blue);
+				lb_robots.insertDocument("\nSunny:"+sdf.format(new Date())+"\n  ", Color.blue);
 				lb_robots.insertDocument("谢谢，学习了！", Color.black);
 
 				int index=str1.indexOf("#");
@@ -70,7 +70,7 @@ public class JudgeThread
 				System.out.println("chat="+chat);
 				//将训练的内容写入txt文件中
 				wf.writefile("  我:"+sdf.format(new Date())+"  "+chat,"jilu");
-				wf.writefile("  球球:"+sdf.format(new Date())+"  "+str2,"jilu");
+				wf.writefile("  Sunny:"+sdf.format(new Date())+"  "+str2,"jilu");
 				Info.bool=false;
 				new ReadRecord(str).start();
 			}
@@ -92,7 +92,7 @@ public class JudgeThread
 				s0=m.replaceAll("");
 				if (s0.startsWith("是的")||s0.startsWith("是")||s0.startsWith("恩")||s0.startsWith("嗯"))
 				{
-					lb_robots.insertDocument("\n球球:"+sdf.format(new Date())+"\n  ", Color.blue);
+					lb_robots.insertDocument("\nSunny:"+sdf.format(new Date())+"\n  ", Color.blue);
 					lb_robots.insertDocument(Info.dialog, Color.black);
 				}
 				else
@@ -104,10 +104,10 @@ public class JudgeThread
 			else if (Info.bool)//初次建立查询是否成功
 			{
 
-				lb_robots.insertDocument("\n球球:"+sdf.format(new Date())+"\n  ", Color.blue);
+				lb_robots.insertDocument("\nSunny:"+sdf.format(new Date())+"\n  ", Color.blue);
 				lb_robots.insertDocument(Info.answer, Color.black);
 				wf.writefile("  我:"+sdf.format(new Date())+"  "+str,"jilu");
-				wf.writefile("  球球:"+sdf.format(new Date())+"  "+Info.answer,"jilu");
+				wf.writefile("  Sunny:"+sdf.format(new Date())+"  "+Info.answer,"jilu");
 				Info.bool=false;
 				Info.dialog=null;
 				String str1="4*"+Info.ID+"*"+str;
@@ -135,7 +135,7 @@ public class JudgeThread
 					System.out.println("s1="+s1);
 					if (s1.length()==0&&s.length()>=2)//将信息发送给服务器端
 					{
-						lb_robots.insertDocument("\n球球:"+sdf.format(new Date())+"\n  ", Color.blue);
+						lb_robots.insertDocument("\nSunny:"+sdf.format(new Date())+"\n  ", Color.blue);
 						lb_robots.insertDocument(str+",什么呀", Color.black);
 						Info.count6++;
 					}
@@ -199,10 +199,10 @@ public class JudgeThread
 	{
 		if (Info.bool)//初次建立查询是否成功
 		{
-			lb_robots.insertDocument("\n球球:"+sdf.format(new Date())+"\n  ", Color.blue);
+			lb_robots.insertDocument("\nSunny:"+sdf.format(new Date())+"\n  ", Color.blue);
 			lb_robots.insertDocument(Info.answer, Color.black);
 			wf.writefile("  我:"+sdf.format(new Date())+"  "+str,"jilu");
-			wf.writefile("  球球:"+sdf.format(new Date())+"  "+Info.answer,"jilu");
+			wf.writefile("  Sunny:"+sdf.format(new Date())+"  "+Info.answer,"jilu");
 			Info.bool=false;
 			Info.dialog=null;
 			String str1="4*"+Info.ID;

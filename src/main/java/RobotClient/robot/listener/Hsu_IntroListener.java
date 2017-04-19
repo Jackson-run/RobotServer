@@ -26,7 +26,7 @@ public class Hsu_IntroListener extends MouseAdapter{
                 "化学、制药工程、应用化学、化学工程与工艺、材料科学与工程、生物科学、生物技术、环境科学、园林、林学、环境工程、生物工程、食品科学与工程、建筑学、土木工程、" +
                 "城市规划、学前教育、小学教育、应用心理学、社会体育、美术学、艺术设计、动画、音乐学、广播电视编导、思想政治教育。";
         SimpleDateFormat sf=new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
-        lb_robots.insertDocument("\n球球:"+sf.format(new Date())+"\n", Color.GREEN);
+        lb_robots.insertDocument("\nSunny:"+sf.format(new Date())+"\n", Color.GREEN);
         lb_robots.insertDocument(hsustr,Color.gray);
     }
 

@@ -189,7 +189,7 @@ public class MyActionListener implements ActionListener,KeyListener,CaretListene
 			System.out.println("str0"+str0);
 			if (!str0.startsWith("0"))
 			{
-				lb_robots.insertDocument("\n球球:"+sdf.format(new Date())+"\n  ", Color.BLUE);
+				lb_robots.insertDocument("\nSunny:"+sdf.format(new Date())+"\n  ", Color.BLUE);
 				lb_robots.insertDocument("服务器正在更新，请稍后在使用......",Color.BLACK);
 			}
 		}
@@ -198,7 +198,7 @@ public class MyActionListener implements ActionListener,KeyListener,CaretListene
 			System.out.println("str0"+str0);
 			if (!str0.startsWith("0"))
 			{
-				lb_robots.insertDocument("\n球球:"+sdf.format(new Date())+"\n  ", Color.BLUE);
+				lb_robots.insertDocument("\nSunny:"+sdf.format(new Date())+"\n  ", Color.BLUE);
 				lb_robots.insertDocument("服务器正在更新，请稍后......",Color.BLACK);
 			}
 		}

@@ -17,7 +17,7 @@ public class ShowMessage
 	{
 		this.strings=strings;
 		sdf=new SimpleDateFormat("yyyy-MM-dd hh:MM:ss");
-		lb_robots.insertDocument("\n球球:"+sdf.format(new Date())+"\n  ",Color.blue);
+		lb_robots.insertDocument("\nSunny:"+sdf.format(new Date())+"\n  ",Color.blue);
 		//lb_robots.insertDocument(line, Color.black);
 	}
 }

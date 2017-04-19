@@ -30,7 +30,7 @@ public class AboutUsListener extends MouseAdapter{
                 "与核心参与省部级项目 6 项；发表核心论文 30 余篇；崇尚技术研发" +
                 "与研究工作。";
         SimpleDateFormat sf=new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
-        lb_robots.insertDocument("\n球球:"+sf.format(new Date())+"\n", Color.GREEN);
+        lb_robots.insertDocument("\nSunny:"+sf.format(new Date())+"\n", Color.GREEN);
         lb_robots.insertDocument(aboutus_str,Color.gray);
     }
 
