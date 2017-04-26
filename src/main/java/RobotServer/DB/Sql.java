@@ -12,16 +12,22 @@ public class Sql
 	private Connection conn;
 	public  PreparedStatement pst;
 	private ResultSet rs;
-	String db="robot";
-	String user="root";
-	String password="123456";
+	static ParseXML parse = new ParseXML();
+	static ConBean bean = null;
+
 	public Sql()
 	{
 		try
 		{
+			parse.init();
+			bean = parse.getBean();
+			String url=bean.getCon()+"&characterEncoding=utf-8";
+			String user="root";
+			String password="123456";
 			Class.forName("com.mysql.jdbc.Driver");
-			conn=DriverManager.getConnection("jdbc:mysql://localhost/"+db,""+user,""+password);
+			conn=DriverManager.getConnection(url,user,password);
 			stmt=conn.createStatement();
+			System.out.println("连接成功");
 		}
 		catch (ClassNotFoundException ee)
 		{

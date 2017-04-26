@@ -17,7 +17,7 @@ public class LinkServer extends Thread
 	{
 		try
 		{
-			socket=new Socket("127.0.0.1",5525);
+			socket=new Socket("localhost",5525);
 		}
 		catch (IOException r)
 		{}
