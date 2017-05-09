@@ -13,8 +13,7 @@ public class ChatThread implements Runnable
 	private Socket socket=null;
 	private DataInputStream in=null;
 	private String str=null;
-	public ChatThread(Socket socket)
-	{
+	public ChatThread(Socket socket){
 		this.socket=socket;
 		try
 		{
@@ -25,8 +24,7 @@ public class ChatThread implements Runnable
 			e.printStackTrace();
 		}
 	}
-	public void run()
-	{
+	public void run() {
 		try
 		{
 			while (true)

@@ -49,8 +49,8 @@ public class MyTimerTask extends TimerTask
 			{
 				System.out.println("enter");
 				String s=answer.substring(answer.length()-1,answer.length());
-				this.status=Integer.parseInt(s);
-				answer=answer.substring(0,answer.length()-1);
+				//this.status=Integer.parseInt(s);
+				answer=answer.substring(0,answer.length());
 
 			}
 			catch (Exception e)
@@ -64,7 +64,7 @@ public class MyTimerTask extends TimerTask
 	{
 		System.out.println("insert into MyTimerTask");
 		System.out.println("question:"+question+" ,answer:"+answer+" ,status="+status+" ,id="+id);
-		if (status<2)
+		if (status>2)
 		{
 			return;
 		}
@@ -98,6 +98,8 @@ public class MyTimerTask extends TimerTask
 		{
 			e0.printStackTrace();
 		}
+		System.out.println("开始insert（）-----------------------");
+		insertSql();
 		//查看数据库中是否有相同的问题
 	/*	db=new Sql();
 		String sql="select * from reply_views where v_key like '"+quest+"%' order by i_quanzhi desc";
@@ -137,7 +139,7 @@ public class MyTimerTask extends TimerTask
 			}
 		}
 		*/
-		insertSql();
+
 	}
 	//插入语句
 	public void insertSql()
