@@ -25,6 +25,7 @@ public class ConBean {
 	public String getU_name(){
 	
 		return u_name;
+		//5656
 	}
 
 	public String getU_pass(){
