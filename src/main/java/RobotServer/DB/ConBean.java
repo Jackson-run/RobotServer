@@ -3,6 +3,7 @@ package RobotServer.DB;
 public class ConBean {
 	private String con;
 	private String u_name;
+	//测试
 	private String u_pass;
 	
 	public void setCon(String con){
